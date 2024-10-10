@@ -45,7 +45,7 @@ Update: 'unitname_1', 'unitname_2' & 'unitname_2' to match the pattern of your e
     "1000 Level": nodes_df[nodes_df['Cluster'].str.contains('unitname_1')]['Cluster'].unique(),
     "2000 Level": nodes_df[nodes_df['Cluster'].str.contains('unitname_2')]['Cluster'].unique(),
     "3000 Level": nodes_df[nodes_df['Cluster'].str.contains('unitname_3')]['Cluster'].unique(),
-}
+    }
 
 # For Pretty - Change colours
 To change colours for each level update as per below. No need to use RGB or Hex, the program will convert if necessary and also do the colour fades for the the nodes and headings.
