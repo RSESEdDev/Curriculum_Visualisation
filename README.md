@@ -14,6 +14,8 @@ Generates a .PDF file showing all program units and lecture topics in a structur
 # How to use
 
 Populate Curriculum_Data_Blank.xlsx as follows:
+NB: All node columns must be populated with unique entries!
+
 1. Sheet 'Nodes' - enter the program_code into the Start column, unit codes into the Cluster column and lecture or titles as appropriate in columns Nodes1 - 24.  Being designed for HE undergraduate programs, Lectures 1 - 24 are assumed.  You can add more columns are required just ensure they are named 'Node*x*' as required.  In the Rank column rank the units 1-> as appropriate for level groupings.  For this purpose a level would be 1000 level courses, 2000 level courses and so on.
 
 *If you want to display relationships:*
