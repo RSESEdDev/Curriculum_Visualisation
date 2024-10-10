@@ -33,4 +33,42 @@ To summarise, depending on what vis you want you will need to fill in the follow
 |Cluster Relationships         |No           |Yes           |
 |Relationships         |No|Yes|
 
+# For Pretty & Relational
+Update the path and file name as required:
+
+    nodes_df = pd.read_excel('Curriculum_Data_Blank.xlsx', sheet_name='Nodes')
+
+# For Pretty - Find nodes
+Update: 'unitname_1', 'unitname_2' & 'unitname_2' to match the pattern of your entry in the Cluster column (minus any unique identifier past the unit level eg: unitname_1 not unitname_1001) as per below.
+
+    cluster_groups = {
+    "1000 Level": nodes_df[nodes_df['Cluster'].str.contains('unitname_1')]['Cluster'].unique(),
+    "2000 Level": nodes_df[nodes_df['Cluster'].str.contains('unitname_2')]['Cluster'].unique(),
+    "3000 Level": nodes_df[nodes_df['Cluster'].str.contains('unitname_3')]['Cluster'].unique(),
+}
+
+# For Pretty - Change colours
+To change colours for each level update as per below. No need to use RGB or Hex, the program will convert if necessary and also do the colour fades for the the nodes and headings.
+
+    level_colors = {
+    "1000 Level": ("yellowgreen", "yellowgreen"), # Cluster color, first node color
+    "2000 Level": ("turquoise", "turquoise"), # Cluster color, first node color
+    "3000 Level": ("lightskyblue", "lightskyblue"), # Cluster color, first node color
+    }
+
+# For Relational - Find nodes
+Update: 'unitname_1', 'unitname_2' & 'unitname_3' to match the pattern of your entry in the Cluster column as per below.
+
+    cluster_groups = [
+    [f"{cluster}_{nodes_df[nodes_df['Cluster'] == cluster]['Rank'].iloc[0]}"
+     for cluster in nodes_df['Cluster'].unique() if cluster.startswith('unitname_1')],
+    [f"{cluster}_{nodes_df[nodes_df['Cluster'] == cluster]['Rank'].iloc[0]}"
+     for cluster in nodes_df['Cluster'].unique() if cluster.startswith('unitname_2')],
+    [f"{cluster}_{nodes_df[nodes_df['Cluster'] == cluster]['Rank'].iloc[0]}"
+     for cluster in nodes_df['Cluster'].unique() if cluster.startswith('unitname_3')],
+    # ... add more groups as needed  ]
+
+
+
+
 
