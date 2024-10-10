@@ -6,7 +6,7 @@ The RSES Curriculum Visualisation Tool provides an easy way to see an entire und
  2. RSES_Curriculum_Viz_Pretty.py
 
 **RSES_ Curriculum_Viz_Relational.py** 
-Generate a .png file which can show both relationships between courses (e.g.: prerequisites) in green and between lecture topics (as cluster nodes) in black.
+Generates a .png file which can show both relationships between courses (e.g.: prerequisites) in green and between lecture topics (as cluster nodes) in black.
 
 **RSES_Curriculum_Viz_Pretty.py**
 Generates a .PDF file showing all program units and lecture topics in a structured and hierarchical format.  This file may be useful for printing as a poster.   
