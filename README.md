@@ -1,6 +1,6 @@
 # RSES Curriculum Visualisation Tool
 
-The RSES Curriculum Visualisation Tool provides an easy way to see an entire undergraduate curriculum at once. It uses GraphViz clusters, and there is a handy tool here https://magjac.com/graphviz-visual-editor/ for visualing the graph output. There are two py files:
+The RSES Curriculum Visualisation Tool provides an easy way to see an entire undergraduate curriculum at once.  This relies on GraphViz clusters, the code generates a Graph output and there is a handy tool here https://magjac.com/graphviz-visual-editor/ for visualing the graph output. There are two py files:
 
  1. RSES_ Curriculum_Viz_Relational.py 
  2. RSES_Curriculum_Viz_Pretty.py
