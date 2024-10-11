@@ -1,6 +1,6 @@
 # RSES Curriculum Visualisation Tool
 
-The RSES Curriculum Visualisation Tool provides an easy way to see an entire undergraduate curriculum at once.  This relies on GraphViz clusters, the code generates a Graph output and there is a handy tool here https://magjac.com/graphviz-visual-editor/ for visualing this and testing changes, as well as either a png or pdf file. The graph source code generated is a modified version of that posted by JJLong https://forum.graphviz.org/t/top-rank-node-is-not-center-aligned-over-some-subgraphs/2338/11.
+The RSES Curriculum Visualisation Tool provides an easy way to see an entire undergraduate curriculum at once.  This relies on GraphViz clusters, the code generates graph source code, for which there is a handy tool here https://magjac.com/graphviz-visual-editor/ for visualing and testing changes, as well as either a png or pdf file. The graph source code generated is a modified version of that posted by JJLong https://forum.graphviz.org/t/top-rank-node-is-not-center-aligned-over-some-subgraphs/2338/11.
 
 There are two py files:
 
