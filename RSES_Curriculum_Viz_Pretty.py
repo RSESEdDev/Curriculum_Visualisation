@@ -41,9 +41,9 @@ dot.attr('edge', fontname='Arial', fontsize='10', arrowsize='0.5')
 
 # Group clusters by level
 cluster_groups = {
-    "1000 Level": nodes_df[nodes_df['Cluster'].str.contains('EMSC1')]['Cluster'].unique(),
-    "2000 Level": nodes_df[nodes_df['Cluster'].str.contains('EMSC2')]['Cluster'].unique(),
-    "3000 Level": nodes_df[nodes_df['Cluster'].str.contains('EMSC3')]['Cluster'].unique(),
+    "1000 Level": nodes_df[nodes_df['Cluster'].str.contains('unitname_1')]['Cluster'].unique(),
+    "2000 Level": nodes_df[nodes_df['Cluster'].str.contains('unitname_2')]['Cluster'].unique(),
+    "3000 Level": nodes_df[nodes_df['Cluster'].str.contains('unitname_3')]['Cluster'].unique(),
 }
 
 # Define colors for each level (this is manually set, if 4000 level add extra row)
