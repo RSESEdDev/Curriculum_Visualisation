@@ -22,10 +22,10 @@ NB: All node columns must be populated with unique entries!
 
 *If you want to display relationships:*
 
- 1. Cluster Relationships' sheet will provide the data to show relationships between courses (e.g.: prerequisites), these will show as green arrows.  Enter in the first course under SourceCluster column and the in the TargetCluster enter the course that the first course is a per-requiste for.
+ 1. 'Cluster Relationships' sheet will provide the data to show relationships between courses (e.g.: prerequisites), these will show as green arrows.  Enter in the first course under SourceCluster column and the in the TargetCluster enter the course that the first course is a per-requiste for.
  2. 'Relationships' sheet will provide the data to show relationships between lectures (nodes) as black arrows.  Enter the earliest lecture in the Source column (exactly as listed in the Nodes sheet) and the later lecture in the Target column.
 
-Note displaying relationships gets messy fast - this is recommended only for streams or a series of related courses.
+Note: displaying relationships gets messy fast - this is recommended only for streams or a series of related courses.
 
 To summarise, depending on what vis you want you will need to fill in the following sheets:
 
