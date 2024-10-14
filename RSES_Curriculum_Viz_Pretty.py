@@ -31,7 +31,7 @@ def wrap_text(text, max_width):
     return '\n'.join(wrapped_lines)
 
 # Load data from Excel
-nodes_df = pd.read_excel('Curriculum_Data.xlsx', sheet_name='Nodes')
+nodes_df = pd.read_excel('Curriculum_Data_Blank.xlsx', sheet_name='Nodes')
 
 # Create Graphviz object
 dot = Digraph(comment='Curriculum Visualization')
@@ -111,16 +111,20 @@ for level_name, clusters in cluster_groups.items():
                             
         current_cluster_count += 1
               
-        # Add course nodes
+        # Initialize the group_factor & node_factor based on the cluster index to get shading
+        node_factor = 0.5  - (course_counter * .1)  # Adjust this formula as needed
+        group_factor = 0.9 - (course_counter * .1)  # Adjust this formula as needed
+        
+        # Add course nodes & colour shades
         node_list = nodes_df[nodes_df['Cluster'] == cluster].iloc[0].tolist()[2:]
+        
         for i, node_name in enumerate(node_list):
             if pd.notna(node_name):
                 if i == 0:
-                  fill_color = lighten_color(node_color, factor=0.5)   # Original color for the first node
+                    fill_color = lighten_color(node_color, factor=node_factor)  
                 else:
-                  fill_color = lighten_color(node_color, factor=0.9) 
+                    fill_color = lighten_color(node_color, factor=group_factor) 
                 font_size = '13' if i == 0 else '10'
-                # If this is the first node, set the cluster background to a lighter color
                 wrapped_node_name = wrap_text(node_name, 20)  # Assuming 20 characters width
                 numbered_node_name = f"{level_counter}.{current_cluster_count + 1}.{i + 1}"
                 course_cluster.node(numbered_node_name, 
