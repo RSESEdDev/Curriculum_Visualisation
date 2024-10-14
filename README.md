@@ -39,11 +39,7 @@ To summarise, depending on what vis you want you will need to fill in the follow
 Update the path and file name as required:
 
     nodes_df = pd.read_excel('Curriculum_Data_Blank.xlsx', sheet_name='Nodes')
-    #Relational only
-    relationships_df = pd.read_excel(excel_file, sheet_name='Relationships')
-    cluster_relationships_df = pd.read_excel(excel_file, sheet_name='Cluster Relationships')
-
-
+    
 # For Pretty - Find nodes
 Update: 'unitname_1', 'unitname_2' & 'unitname_2' to match the pattern of your entry in the Cluster column (minus any unique identifier past the unit level eg: unitname_1 not unitname_1001) as per below.
 
