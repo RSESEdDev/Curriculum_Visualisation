@@ -10,6 +10,7 @@ def lighten_color(color, factor=0.5):
     return mcolors.to_hex(lightened_rgb)
 
 def wrap_text(text, max_width):
+    text = str(text)  # This line converts any data type to string
     words = text.split(' ')
     wrapped_lines = []
     current_line = ""
