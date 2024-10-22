@@ -2,16 +2,20 @@
 
 The RSES Curriculum Visualisation Tool provides an easy way to see an entire undergraduate curriculum at once.  This relies on GraphViz clusters, the code generates graph source code, for which there is a handy tool here https://magjac.com/graphviz-visual-editor/ for visualising and testing changes, as well as either a png or pdf file. The graph source code generated is a modified version of that posted by JJLong https://forum.graphviz.org/t/top-rank-node-is-not-center-aligned-over-some-subgraphs/2338/11.
 
-There are two py files:
+There are three py files:
 
  1. RSES_ Curriculum_Viz_Relational.py 
  2. RSES_Curriculum_Viz_Pretty.py
+ 3. Curriculum_Compare_Two_Programs.py
 
 **RSES_ Curriculum_Viz_Relational.py** 
 Generates a .png file which can show both relationships between courses (e.g.: prerequisites) in green and between lecture topics (as cluster nodes) in black.
 
 **RSES_Curriculum_Viz_Pretty.py**
 Generates a .PDF file showing all program units and lecture topics in a structured and hierarchical format.  This file may be useful for printing as a poster.   
+
+**Curriculum_Compare_Two_Programs.py**
+Generates a .PDF file displaying two programs side by side for each level.  
 
 # How to use
 
