@@ -1,5 +1,7 @@
 Need API Key from Hugging Face https://huggingface.co/settings/tokens
 
+If changing the units, make sure to update the cluster relationships tab in the xlsx file.
+
 **Important Variables**
 |Variable Name 	|Description|
 |---|---|
