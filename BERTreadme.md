@@ -1,3 +1,5 @@
+Need API Key from Hugging Face https://huggingface.co/settings/tokens
+
 **Important Variables**
 |Variable Name 	|Description|
 |---|---|
